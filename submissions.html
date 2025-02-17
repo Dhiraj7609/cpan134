@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSANE ARTIST - Submit Art</title>
+</head>
+<body>
+    <header>
+        <h1>INSANE ARTIST</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="submissions.html">Submit Art</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Submit Your Art</h2>
+            <p>Thank you for your interest in showcasing your work with the INSANE  Artist Showcase! Please fill out the form below to submit your art for consideration.</p>
+
+            <form action="/submit-art" method="post">  <fieldset>
+                    <legend>Artist Information</legend>
+                    <label for="artist-name">Name:</label><br>
+                    <input type="text" id="artist-name" name="artist-name" required><br><br>
+
+                    <label for="artist-email">Email:</label><br>
+                    <input type="email" id="artist-email" name="artist-email" required><br><br>
+
+                    <label for="artist-bio">Bio:</label><br>
+                    <textarea id="artist-bio" name="artist-bio" rows="4" cols="50" required></textarea><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Artwork Details</legend>
+                    <label for="artwork-title">Title:</label><br>
+                    <input type="text" id="artwork-title" name="artwork-title" required><br><br>
+
+                    <label for="artwork-category">Category:</label><br>
+                    <select id="artwork-category" name="artwork-category" required>
+                        <option value="">Select a category</option>
+                        <option value="painting">Painting</option>
+                        <option value="sculpture">Sculpture</option>
+                        <option value="photography">Photography</option>
+                        <option value="digital">Digital Art</option>
+                        <option value="mixed-media">Mixed Media</option>
+                    </select><br><br>
+
+                    <label for="artwork-description">Description:</label><br>
+                    <textarea id="artwork-description" name="artwork-description" rows="4" cols="50" required></textarea><br><br>
+
+                    <label for="artwork-image">Image Upload:</label><br>
+                    <input type="file" id="artwork-image" name="artwork-image" accept="image/*" required><br><br>  </fieldset>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h3>Visit Our Gallery</h3>
+            <address>
+                777 Art District Avenue<br>
+                Toronto, Ontario L6p 1R8<br>
+                Email: <a href="mailto:gallery@insaneartist.com">gallery@insaneartist.com</a><br>
+                Phone: <a href="tel:8980252753">(8980252753)</a>
+            </address>
+        </section>
+        
+</body>
+</html>
